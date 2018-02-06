@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Character Set -->
+  <meta charset="UTF-8">
+  <title>Whack-A-Zombie!</title>
+  <!-- Responsive viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Freckle+Face" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- Ionicons -->
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="css/animate.css">
+  <!--Normalize makes browsers render all elements more consistently -->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+    
+<body>
+
+    <div class="animated zoomIn"><h1>Whack-A-Zombie! <span id="scoreTop" class="score">0</span></h1></div>
+    
+    <div class="row">
+        <div class="col-md-3 gameOption">
+   
+            <button id="startA" class="startGame btn disabled">Start Game</button>
+
+            <div class="levelButtonsC">
+                <button id="easy" class="levels ">Easy</button>
+                <button id="medium" class="levels">Medium</button>
+                <button id="hard" class="levels">Hard</button>
+            </div>
+
+            <span id="hS" class="scoreC"></span>
+            <span id="lS" class="scoreC"></span>
+            <span class="buttonbox"></span>
+
+            <button id="reset1" class="startGame myScore myScore2">Reset Game</button>
+        </div>
+            
+        <div id="messages" class="col-md-5 alertMessages">
+            
+            <h2>You have 15 seconds to eliminate as many Zombies as possible by double-clicking on them directly.</h2> 
+            <h3>Select a level from Easy, Medium, Large and 'Start Game' to begin playing...</h3> 
+            <h2>Good Luck!</h2> 
+            
+            <button id="closeMessages" class="btn primary"><i class="fa fa-times icon" aria-hidden="true"></i></button>
+            
+        </div>
+        
+        <!--<div class="col-md-2 col-md-offset-1 leaderBoard">Leader Board</div>-->
+        </div>
+    
+    <!-- ID btn for modal -->
+    <!--<button id="myBtn" class="endGame" onClick="endGame()">End Game</button>-->
+     
+    
+    
+<!-- MODAL ----------------------------------------------------->
+    
+    
+<!--------------------------------------------------------------->    
+    
+  <div class="game">
+    <div class="hole hole1">
+      <div class="zombie"></div>
+    </div>
+    <div class="hole hole2">
+      <div class="zombie"></div>
+    </div>
+    <div class="hole hole3">
+      <div class="zombie"></div>
+    </div>
+    <div class="hole hole4">
+      <div class="zombie"></div>
+    </div>
+    <div class="hole hole5">
+      <div class="zombie"></div>
+    </div>
+    <div class="hole hole6">
+      <div class="zombie"></div>
+    </div>
+  </div>
+    
+<!---------------------------------------------------------------------->    
+
+<script src="js/js.js"></script>
+</body>
+</html>
